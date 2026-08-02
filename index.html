@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Website resmi Desa Kurniabakti" />
+    <title>Desa Kurniabakti | Menjaga Tradisi, Mengembangkan Potensi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="brand" href="#beranda"
+        ><img src="assets/icons/image.svg" alt="Logo Desa Kurniabakti" /><span
+          >Kurniabakti<small></small></span></a
+      ><button class="menu-toggle" aria-label="Buka menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav class="main-nav">
+        <a class="active" href="#beranda">Beranda</a
+        ><a href="#profil">Profil Desa</a><a href="#data-desa">Data Desa</a
+        ><a href="#potensi">Potensi</a><a href="#galeri">Galeri</a
+        ><a href="#kontak">Kontak</a>
+      </nav>
+      <a class="button button-accent" href="#peta"
+        ><i class="fa-solid fa-location-dot"></i> Lokasi Desa</a
+      >
+    </header>
+    <main>
+      <section id="beranda" class="hero">
+        <div class="hero-slides">
+          <div class="hero-slide slide-one"></div>
+          <div class="hero-slide slide-two"></div>
+          <div class="hero-slide slide-three"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content container reveal">
+          <p class="eyebrow light">
+            <span></span> Selamat datang di rumah kami
+          </p>
+          <h1>Desa Kurniabakti</h1>
+          <h2>Menjaga Tradisi, Mengembangkan Potensi, Membangun Masa Depan</h2>
+          <p>
+            Desa yang tumbuh bersama alam, budaya, dan semangat gotong royong
+            untuk menciptakan masa depan yang lebih baik.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-accent" href="#potensi"
+              >Eksplorasi Potensi Desa
+              <i class="fa-solid fa-arrow-right"></i></a
+            ><a class="button button-outline-light" href="#peta">Lihat Peta</a>
+          </div>
+        </div>
+        <div class="slide-dots">
+          <button class="active" aria-label="Slide 1"></button
+          ><button aria-label="Slide 2"></button
+          ><button aria-label="Slide 3"></button>
+        </div>
+      </section>
+      <section id="profil" class="section profile-section">
+        <div class="container profile-grid">
+          <div class="reveal">
+            <p class="eyebrow"><span></span> Tentang desa</p>
+            <h2>Profil Desa <em>Kurniabakti</em></h2>
+            <p class="lead">
+              Desa Kurniabakti merupakan salah satu desa di Kecamatan Ciawi,
+              Kabupaten Tasikmalaya. Wilayahnya berupa sawah dan dataran yang
+              subur dengan suhu rata-rata 27–30°C.
+            </p>
+            <p>
+              Dengan semangat gotong royong, masyarakat mengembangkan pertanian,
+              usaha pengolahan tahu dan tempe, serta berbagai usaha ekonomi
+              produktif untuk mewujudkan desa yang mandiri, sehat, cerdas, dan
+              sejahtera.
+            </p>
+            <div class="history-block">
+              <h3>
+                <i class="fa-solid fa-book-open"></i> Sejarah Desa Kurniabakti
+              </h3>
+              <!-- <p>
+                Tuliskan sejarah berdirinya Desa Kurniabakti di sini. Bagian ini
+                dapat diisi dengan asal-usul nama desa, perkembangan wilayah,
+                tokoh masyarakat, serta peristiwa penting yang membentuk desa.
+              </p> -->
+            </div>
+
+            <div class="facts">
+              <div>
+                <i class="fa-solid fa-ruler-combined"></i
+                ><strong>151,03 <small>Ha</small></strong
+                ><span>Luas Wilayah</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-people-group"></i
+                ><strong>5.425 <small>Jiwa</small></strong
+                ><span>Jumlah Penduduk</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-sitemap"></i
+                ><strong>42 <small>RT</small> / 11 <small>RW</small></strong
+                ><span>Wilayah Administratif</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-wheat-awn"></i><strong>Pertanian</strong
+                ><span>Mata Pencaharian Utama</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile-image placeholder-photo reveal">
+            <span><i class="fa-regular fa-image"></i> Foto Profil Desa</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="data-desa" class="section village-data-section">
+        <div class="container">
+          <div class="section-heading center reveal">
+            <p class="eyebrow"><span></span> Arah pembangunan <span></span></p>
+            <h2>Visi, Misi &amp; <em>Sasaran</em></h2>
+          </div>
+          <div class="vision-mission-grid">
+            <article class="info-panel reveal">
+              <p class="eyebrow">Visi</p>
+              <blockquote>
+                “Terwujudnya Masyarakat Desa Kurniabakti Yang Mandiri, Berakhlak
+                Mulia, Sehat, Cerdas dan Sejahtera”
+              </blockquote>
+            </article>
+            <article class="info-panel reveal">
+              <p class="eyebrow">Misi utama</p>
+              <ol class="mission-list">
+                <li>
+                  Mengamalkan ajaran agama sebagai sumber motivasi dalam
+                  kehidupan sehari-hari.
+                </li>
+                <li>
+                  Meningkatkan profesionalisme perangkat desa dan komunikasi
+                  dengan masyarakat.
+                </li>
+                <li>
+                  Meningkatkan pelayanan kesehatan, kebersihan, dan pendidikan
+                  wajib belajar.
+                </li>
+                <li>
+                  Memberdayakan kekuatan ekonomi, sosial budaya, pertahanan, dan
+                  keamanan.
+                </li>
+                <li>
+                  Mengembangkan pertanian dan usaha ekonomi produktif sebagai
+                  prioritas desa.
+                </li>
+                <li>
+                  Meningkatkan pembangunan sarana prasarana serta ketertiban dan
+                  kesadaran hukum.
+                </li>
+              </ol>
+            </article>
+          </div>
+          <div class="targets-panel reveal">
+            <p class="eyebrow">Sasaran pembangunan</p>
+            <div class="target-list">
+              <span
+                ><i class="fa-solid fa-check"></i> Fasilitas pendidikan agama
+                dan magrib mengaji</span
+              >
+              <span
+                ><i class="fa-solid fa-check"></i> Aparatur desa yang siap
+                melayani warga</span
+              >
+              <span
+                ><i class="fa-solid fa-check"></i> Forum musyawarah di setiap
+                kewilayahan</span
+              >
+              <span
+                ><i class="fa-solid fa-check"></i> Peningkatan kesehatan dan
+                tuntas wajib belajar</span
+              >
+              <span
+                ><i class="fa-solid fa-check"></i> Penguatan ekonomi melalui
+                BUMDes</span
+              >
+              <span
+                ><i class="fa-solid fa-check"></i> Kelompok tani dan usaha
+                produktif yang berkembang</span
+              >
+              <span
+                ><i class="fa-solid fa-check"></i> Sarana prasarana sesuai
+                prioritas desa</span
+              >
+              <span
+                ><i class="fa-solid fa-check"></i> Ketertiban, keamanan, dan
+                kesadaran hukum</span
+              >
+            </div>
+          </div>
+          <div class="data-grid">
+            <article class="data-card reveal">
+              <h3>
+                <i class="fa-solid fa-mountain-sun"></i> Kondisi geografis
+              </h3>
+              <dl>
+                <dt>Sawah</dt>
+                <dd>82 Ha</dd>
+                <dt>Darat</dt>
+                <dd>69,03 Ha</dd>
+                <dt>Pekarangan/bangunan</dt>
+                <dd>50,03 Ha</dd>
+                <dt>Lain-lain</dt>
+                <dd>19 Ha</dd>
+                <dt>Ketinggian</dt>
+                <dd>509,60 mdpl</dd>
+              </dl>
+            </article>
+            <article class="data-card reveal">
+              <h3><i class="fa-solid fa-users"></i> Demografi</h3>
+              <dl>
+                <dt>Kepala keluarga</dt>
+                <dd>1.603 KK</dd>
+                <dt>Laki-laki</dt>
+                <dd>2.731 orang</dd>
+                <dt>Perempuan</dt>
+                <dd>2.694 orang</dd>
+                <dt>Total penduduk</dt>
+                <dd>5.425 orang</dd>
+                <dt>Orbitasi kecamatan</dt>
+                <dd>2,3 km / ±15 menit</dd>
+              </dl>
+            </article>
+            <article class="data-card reveal">
+              <h3>
+                <i class="fa-solid fa-map-location-dot"></i> Wilayah &amp;
+                aparatur
+              </h3>
+              <p class="data-muted">
+                Lima kepunduhan: Sukarasa, Asem, Leles Hilir, Leles Tengah, dan
+                Sindangtamu.
+              </p>
+              <p class="data-muted">
+                Wilayah desa terdiri dari 11 RW dan 42 RT. Kepala Desa:
+                <strong>Cece Hermana</strong>.
+              </p>
+              <p class="data-muted">
+                Batas wilayah: utara dan barat Desa Pasirhuni, selatan Desa
+                Ciawi, timur Desa Pakemitan.
+              </p>
+              <p class="data-muted">
+                Perangkat desa: U. Sulaeman (Sekretaris), Deni Yulianto (Kasi
+                Pemerintahan), Kania Muntaha Amelia (Kasi Kesejahteraan), Putri
+                Ayu Lestari (Kasi Pelayanan), Rini Fitri Rohaeni (Kaur Umum),
+                Ina Nurlaila (Kaur Keuangan), dan Yana Andriana (Kaur
+                Perencanaan).
+              </p>
+            </article>
+          </div>
+          <div class="facilities reveal">
+            <h3>
+              <i class="fa-solid fa-building-columns"></i> Sarana dan prasarana
+            </h3>
+            <div class="facility-list">
+              <span><b>6</b> satuan pendidikan</span
+              ><span><b>8</b> posyandu</span><span><b>8</b> masjid jami</span
+              ><span><b>40</b> langgar</span><span><b>1</b> BUMDes</span
+              ><span><b>17</b> industri rumah tangga</span
+              ><span><b>58</b> perusahaan kecil</span><span><b>3</b> bank</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="potensi" class="section potential-section">
+        <div class="container">
+          <div class="section-heading center reveal">
+            <p class="eyebrow"><span></span> Fokus utama <span></span></p>
+            <h2>Potensi Unggulan <em>Desa Kurniabakti</em></h2>
+            <p>
+              Berbagai sektor potensial yang siap dikembangkan dan dikunjungi.
+            </p>
+          </div>
+          <div class="potential-grid">
+            <article class="potential-card reveal">
+              <div class="card-image photo-farm">
+                <i class="fa-solid fa-industry"></i>
+              </div>
+              <div class="card-content">
+                <span class="card-tag">Industri Pengolahan</span>
+                <h3>Pengolahan Pangan Tahu &amp; Tempe</h3>
+                <p>
+                  Industri pengolahan pangan lokal yang menghasilkan tahu dan
+                  tempe berkualitas untuk kebutuhan masyarakat.
+                </p>
+                <a href="detail-potensi.html?id=tahu-tempe" class="detail-link"
+                  >Lihat Detail <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </article>
+            <article class="potential-card reveal">
+              <div class="card-image photo-bamboo">
+                <i class="fa-solid fa-wheat-awn"></i>
+              </div>
+              <div class="card-content">
+                <span class="card-tag">Pertanian</span>
+                <h3>Pertanian Tanaman Pangan</h3>
+                <p>
+                  Sektor pertanian tanaman pangan yang menjadi sumber
+                  penghidupan dan ketahanan pangan desa.
+                </p>
+                <a
+                  href="detail-potensi.html?id=pertanian-tanaman-pangan"
+                  class="detail-link"
+                  >Lihat Detail <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </article>
+            <article class="potential-card reveal">
+              <div class="card-image photo-coffee">
+                <i class="fa-solid fa-store"></i>
+              </div>
+              <div class="card-content">
+                <span class="card-tag">Perdagangan</span>
+                <h3>Kawasan Pusat Perdagangan Perkotaan Ciawi</h3>
+                <p>
+                  Bagian dari kawasan pusat perdagangan perkotaan Ciawi yang
+                  mendukung aktivitas ekonomi dan distribusi wilayah.
+                </p>
+                <a
+                  href="detail-potensi.html?id=perdagangan-ciawi"
+                  class="detail-link"
+                  >Lihat Detail <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </article>
+          </div>
+          <div class="potential-note reveal">
+            <div>
+              <i class="fa-solid fa-droplet"></i>
+              <h3>Potensi alam &amp; perikanan</h3>
+              <p>
+                Mata air desa dapat dikembangkan untuk sarana air bersih dan
+                perikanan, didukung tersedianya kolam.
+              </p>
+            </div>
+            <div>
+              <i class="fa-solid fa-handshake-angle"></i>
+              <h3>Tantangan pengembangan</h3>
+              <p>
+                Potensi desa masih membutuhkan dukungan pendanaan dan penanganan
+                pemerintah agar manfaatnya semakin luas bagi kesejahteraan
+                warga.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="galeri" class="section gallery-section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow"><span></span> Cerita visual</p>
+            <h2>Galeri Desa <em>Kurniabakti</em></h2>
+          </div>
+          <div class="gallery-grid">
+            <button
+              class="gallery-photo gallery-1 reveal"
+              data-title="Pemandangan Kurniabakti"
+            >
+              <img src="assets/img/foto-1.jpg" alt="Pemandangan Kurniabakti" />
+              Foto 1 <i class="fa-solid fa-expand"></i></button
+            ><button
+              class="gallery-photo gallery-2 reveal"
+              data-title="Kegiatan Warga"
+            >
+              <img
+                src="assets/img/foto-2.jpg"
+                alt="Kegiatan warga Kurniabakti"
+              />
+              Foto 2 <i class="fa-solid fa-expand"></i></button
+            ><button
+              class="gallery-photo gallery-7 reveal"
+              data-title="Kebun Kopi"
+            >
+              <img src="assets/img/foto-7.jpg" alt="Kebun Kurniabakti" />
+              Foto 7 <i class="fa-solid fa-expand"></i></button
+            ><button
+              class="gallery-photo gallery-8 reveal"
+              data-title="Gotong Royong"
+            >
+              <img
+                src="assets/img/foto-8.jpg"
+                alt="Gotong royong warga Kurniabakti"
+              />
+              Foto 8 <i class="fa-solid fa-expand"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="peta" class="section map-section">
+        <div class="container">
+          <div class="section-heading center reveal">
+            <p class="eyebrow"><span></span> Temukan kami <span></span></p>
+            <h2>Lokasi Desa <em>Kurniabakti</em></h2>
+          </div>
+          <div class="map-grid">
+            <div id="map" class="map-frame reveal"></div>
+            <div class="map-info reveal">
+              <i class="fa-solid fa-location-dot"></i>
+              <h3>Desa Kurniabakti</h3>
+              <p>Jl. Desa Kurniabakti, Kec. ..., Kab. ...</p>
+              <dl>
+                <dt>Jarak ke kota terdekat</dt>
+                <dd>±</dd>
+                <dt>Akses jalan</dt>
+                <dd>Jalan desa beraspal dan dapat dilalui kendaraan</dd>
+              </dl>
+              <a
+                class="detail-link"
+                href="https://www.google.com/maps/search/?api=1&amp;query=-7.15278,108.13944"
+                target="_blank"
+                rel="noreferrer"
+                >Buka Google Maps
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="kontak" class="section contact-section">
+        <div class="container contact-grid">
+          <div class="reveal">
+            <p class="eyebrow light"><span></span> Mari terhubung</p>
+            <h2>Hubungi <em>Kami</em></h2>
+            <p class="lead">
+              Punya pertanyaan atau ingin berkunjung? Kami siap menyambut Anda.
+            </p>
+            <div class="contact-list">
+              <p><i class="fa-solid fa-location-dot"></i> Jl. test 123</p>
+              <p><i class="fa-solid fa-phone"></i> (022) XXXX-XXXX</p>
+              <p><i class="fa-solid fa-envelope"></i>kurniabakti@gmail.com</p>
+            </div>
+            <div class="social-links">
+              <a href="#kontak" aria-label="Facebook"
+                ><i class="fa-brands fa-facebook-f"></i></a
+              ><a href="#kontak" aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i></a
+              ><a href="#kontak" aria-label="YouTube"
+                ><i class="fa-brands fa-youtube"></i></a
+              ><a href="#kontak" aria-label="TikTok"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <a class="brand" href="#beranda"
+          ><img src="assets/icons/logo2.svg" alt="Logo desa" /><span
+            >Kurniabakti<small></small></span
+        ></a>
+        <nav>
+          <a href="#profil">Profil</a><a href="#potensi">Potensi</a
+          ><a href="#galeri">Galeri</a><a href="#">Kebijakan Privasi</a>
+        </nav>
+        <p>© 2026 Pemerintah Desa Kurniabakti. All Rights Reserved.<br /></p>
+      </div>
+    </footer>
+    <div class="lightbox" role="dialog" aria-modal="true">
+      <button aria-label="Tutup"><i class="fa-solid fa-xmark"></i></button>
+      <div class="lightbox-photo"><span></span></div>
+    </div>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      crossorigin=""
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

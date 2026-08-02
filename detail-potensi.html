@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Detail Potensi | Desa Kurniabakti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="detail-page">
+    <header class="site-header scrolled">
+      <a class="brand" href="index.html"
+        ><img src="assets/icons/image.svg" alt="Logo Desa Kurniabakti" /><span
+          >Kurniabakti<small>DESA WISATA</small></span
+        ></a
+      >
+      <nav class="main-nav">
+        <a href="index.html#beranda">Beranda</a
+        ><a href="index.html#profil">Profil Desa</a
+        ><a class="active" href="index.html#potensi">Potensi</a
+        ><a href="index.html#galeri">Galeri</a
+        ><a href="index.html#kontak">Kontak</a>
+      </nav>
+      <a class="button button-accent" href="index.html#peta"
+        ><i class="fa-solid fa-location-dot"></i> Lokasi Desa</a
+      >
+    </header>
+    <main>
+      <section class="detail-hero">
+        <div class="container">
+          <p>
+            <a href="index.html">Beranda</a> /
+            <a href="index.html#potensi">Potensi</a> /
+            <span id="breadcrumb">Detail</span>
+          </p>
+          <h1 id="detail-title">Potensi Desa</h1>
+          <p id="detail-category">Potensi Unggulan Desa Kurniabakti</p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container detail-layout">
+          <article class="detail-content">
+            <div class="detail-placeholder">
+              <i class="fa-regular fa-image"></i
+              ><span>Foto Placeholder Potensi</span>
+            </div>
+            <p class="eyebrow">Mengenal lebih dekat</p>
+            <h2 id="content-heading">Potensi Unggulan</h2>
+            <p>
+              Desa Kurniabakti memiliki kekayaan alam dan kreativitas masyarakat
+              yang terus berkembang. Potensi ini menjadi bagian penting dari
+              identitas desa serta ruang bertumbuh bagi generasi masa kini dan
+              mendatang.
+            </p>
+            <p>
+              Dengan dukungan masyarakat, pemerintah desa, dan para mitra,
+              pengelolaan potensi dilakukan secara bertahap dengan tetap
+              mempertahankan nilai kearifan lokal. Setiap kunjungan dan dukungan
+              terhadap produk lokal ikut memperkuat ekonomi warga.
+            </p>
+            <h3>Manfaat & Dampak</h3>
+            <p>
+              Pengembangan potensi membuka lapangan kerja, meningkatkan
+              keterampilan masyarakat, dan memperkenalkan cerita Kurniabakti
+              kepada lebih banyak orang.
+            </p>
+            <div class="mini-gallery">
+              <div>Foto A</div>
+              <div>Foto B</div>
+              <div>Foto C</div>
+            </div>
+            <h3>Peluang Pengembangan</h3>
+            <p>
+              Ke depan, potensi ini dapat dikembangkan melalui paket kunjungan,
+              pemasaran digital, pelatihan pengelola, serta kolaborasi
+              berkelanjutan.
+            </p>
+          </article>
+          <aside>
+            <div class="detail-card">
+              <p class="eyebrow">Info singkat</p>
+              <dl>
+                <dt>Kategori</dt>
+                <dd id="info-category">Wisata Desa</dd>
+                <dt>Lokasi</dt>
+                <dd>Desa Kurniabakti</dd>
+                <dt>Luas area</dt>
+                <dd>Data placeholder</dd>
+                <dt>Kontak pengelola</dt>
+                <dd>(022) XXXX-XXXX</dd>
+              </dl>
+              <a class="button button-accent" href="index.html#peta"
+                >Kunjungi Lokasi</a
+              ><a class="detail-link" href="index.html#kontak"
+                >Hubungi Pengelola</a
+              >
+            </div>
+            <div id="mini-map" class="mini-map"></div>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <a class="brand" href="index.html"
+          ><img src="assets/icons/image.svg" alt="Logo desa" /><span
+            >Kurniabakti<small>DESA WISATA</small></span
+          ></a
+        >
+        <p>© 2026 Pemerintah Desa Kurniabakti.<br /></p>
+      </div>
+    </footer>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      crossorigin=""
+    ></script>
+    <script src="js/detail.js"></script>
+  </body>
+</html>
