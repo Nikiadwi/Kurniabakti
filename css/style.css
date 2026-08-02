@@ -178,30 +178,23 @@ textarea {
 }
 .hero-slide {
   opacity: 0;
-  background-size: cover;
-  background-position: center;
   animation: heroFade 15s infinite;
+  overflow: hidden;
+}
+.hero-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .slide-one {
-  background: linear-gradient(135deg, #769d63, #cad28e 50%, #5e8761);
+  animation-delay: 0s;
 }
 .slide-two {
-  background: linear-gradient(135deg, #416d70, #94b792 47%, #d6bb7d);
   animation-delay: 5s;
 }
 .slide-three {
-  background: linear-gradient(135deg, #675c51, #b6a274 50%, #537b5c);
   animation-delay: 10s;
-}
-.hero-slide:after {
-  /* content: "PLACEHOLDER PEMANDANGAN DESA"; */
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  color: rgba(255, 255, 255, 0.22);
-  font: 700 14px Inter;
-  letter-spacing: 4px;
 }
 .hero-overlay {
   background: linear-gradient(
@@ -311,7 +304,7 @@ textarea {
   position: relative;
 }
 .placeholder-photo:before {
-  /* content: "PLACEHOLDER FOTO"; */
+  content: "PLACEHOLDER FOTO";
   position: absolute;
   inset: 0;
   display: grid;
@@ -542,7 +535,7 @@ textarea {
   position: relative;
 }
 .card-image:after {
-  /* content: "PLACEHOLDER"; */
+  content: "PLACEHOLDER";
   position: absolute;
   bottom: 12px;
   right: 14px;
