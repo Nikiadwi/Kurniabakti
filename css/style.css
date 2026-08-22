@@ -292,25 +292,21 @@ textarea {
 .lead {
   font-size: 16px !important;
 }
-.profile-image,
+.profile-photo,
 .placeholder-photo {
   height: 470px;
   border-radius: 12px;
-  display: flex;
-  align-items: end;
-  padding: 22px;
+  display: block;
   background: linear-gradient(145deg, #759d6f, #c5ba83 52%, #537b5a);
   box-shadow: var(--shadow);
   position: relative;
   overflow: hidden;
 }
-.profile-image img {
+.profile-photo {
   width: 100%;
-  height: 100%;
-  display: block;
+  max-width: 100%;
   object-fit: cover;
   object-position: center;
-  border-radius: 12px;
 }
 .placeholder-photo:before {
   content: "PLACEHOLDER FOTO";
